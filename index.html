@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maura Anjelli Rizky Raharjo</title>
+    <style>
+        :root {
+            --bg-color: #f5f4f0; /* Warna beige soft */
+            --text-color: #2f4f4f; /* Sage green tua untuk teks */
+            --accent-color: #a3b18a; /* Sage green untuk aksen */
+            --heading-color: #344e41; /* Sage green lebih gelap untuk heading */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: var(--heading-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        nav a {
+            color: var(--bg-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .foto-oval {
+            width: 350px; /* Ukuran lebih kecil sesuai permintaan */
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%; /* Bentuk oval */
+            margin-top: 20px;
+            border: 3px solid var(--accent-color);
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        section h2 {
+            font-size: 1.9rem;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin-top: 5px;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+
+        section ul li {
+            margin-bottom: 12px;
+            padding: 5px 0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px 0;
+            border-top: 2px solid var(--accent-color);
+            font-size: 0.9rem;
+            background-color: var(--heading-color);
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman-kerja">Pengalaman Kerja</a>
+        <a href="#pengalaman-organisasi">Organisasi & Kepanitiaan</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Halo, saya Maura Anjelli Rizky Raharjo</h1>
+            <p>Selamat datang di website pribadi saya</p>
+            <img src="./foto-maura.png" alt="Foto Maura" class="foto-oval">
+        </header>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Mahasiswa semester 6 Manajemen Informasi Kesehatan, Sekolah Vokasi Universitas Gadjah Mada. Berpengalaman dalam rekam medis, analisis data kesehatan, pengodean penyakit, dan desain grafis melalui berbagai proyek akhir semester.</p>
+        </section>
+
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <p>D4 Manajemen Informasi Kesehatan - Universitas Gadjah Mada</p>
+            <p>Matematika dan Ilmu Pengetahuan - SMAN 1 Bae Kudus</p>
+        </section>
+
+        <section id="pengalaman-kerja">
+            <h2>Pengalaman Kerja</h2>
+            <ul>
+                <li>Dinas Kesehatan Kabupaten Kudus - PKL Komprehensif</li>
+                <li>Asisten Praktikum Program Studi Manajemen Informasi Kesehatan - Mata Kuliah Akreditasi dan Manajemen Risiko</li>
+                <li>Puskesmas Umbulharjo I - PKL</li>
+                <li>Rumah Sakit PKU Muhammadiyah Bantul - PKL</li>
+            </ul>
+        </section>
+
+        <section id="pengalaman-organisasi">
+            <h2>Organisasi & Kepanitiaan</h2>
+            <ul>
+                <li>Divisi PSDM Unit Fotografi Universitas Gadjah Mada - Kepala Divisi</li>
+                <li>Pelantikan Calon Anggota Unit Fotografi 31 - Ketua Pelaksana</li>
+                <li>Pameran Fotografi Porseni - Staf Tangkai Seni Fotografi</li>
+                <li><a href="https://drive.google.com/file/d/15lX0rcCfKsiR3r4XytsbyohHm5zfnFHR/view?usp=drivesdk">Pameran Pra-Pelantikan CUFO 31 - Sub-Koordinator Divisi Pameran</a></li>
+                <li>Divisi PSDM Unit Fotografi Universitas Gadjah Mada - Staf Divisi</li>
+                <li><a href="https://drive.google.com/file/d/15yX1e3Ai5Y3D33j8GhIAjCATPTq-D0Il/view?usp=drivesdk">International Guest Lecture on Health Information Management 2023 - Staf Divisi Acara</a></li>
+                <li><a href="https://drive.google.com/file/d/15oLtX8xfYVapTLecECKPoBUzs-J9XOUz/view?usp=drivesdk">Kuliah Umum Manajemen Informasi Kesehatan 2023 - Staf Divisi Acara</a></li>
+                <li>Pameran Pra-Pelantikan CUFO 30 - Staf Divisi Pameran</li>
+            </ul>
+        </section>
+
+        <section id="proyek">
+            <h2>Proyek Akhir Semester</h2>
+            <ul>
+                <li>Semester 2: Desain interface aplikasi HIV/AIDS</li>
+                <li>Semester 3: <a href="https://bit.ly/PJD3-Kelompok3">Prototipe formulir elektronik untuk pengodean ICD-10</a></li>
+                <li>Semester 4: <a href="https://drive.google.com/drive/folders/1tdmTE2M2c2XwZXyDOKp6_-gnasNVkh3z?usp=sharing">Fitur pop-up EClaim INACBGs</a></li>
+                <li>Semester 5: <a href="https://drive.google.com/drive/folders/1WoSGIJRGv7mh73J62PhCAU5O3NNNKIpv?usp=sharing">Start-up M-Health Track</a></li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Email: mauraanjellirizkyraharjo1804@mail.ugm.ac.id</p>
+            <p>Instagram: <a href="https://instagram.com/mauraarhj">@mauraarhj</a></p>
+        </section>
+
+        <footer>
+            © 2025 Maura Anjelli Rizky Raharjo | Dibuat di GitHub Pages
+        </footer>
+    </div>
+</body>
+</html>
